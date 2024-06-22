@@ -1,0 +1,372 @@
+:root{
+   
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   
+   font-family: 'Roboto Condensed', sans-serif;
+   
+   box-sizing: border-box;
+}
+
+body{
+   background: #020400;
+   /* background: url(./img/bg.jpg) center no-repeat;
+   backdrop-filter: ; */
+   caret-color: transparent;
+}
+
+.header{
+   width: 100%;
+   background-color: transparent;
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 25px 12.5%;
+
+   z-index: 1;
+}
+
+.header--navbar a{
+   font-size: 16px;
+   font-weight: 500;
+ 
+   color: #e4e4e4;
+   text-decoration: none;
+
+   margin-right: 30px;
+
+   position: relative;
+}
+
+.header--navbar a::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   
+   width: 100%;
+   height: 2px;
+   
+   background-color: #e4e4e4;
+   border-radius: 5px;
+   
+   transform: translateY(8px);
+   transition: .5s;
+   opacity: 0;
+}
+
+
+
+.header--navbar a:hover::after{
+   transform: translateY(0);
+   opacity: 1;
+}
+
+
+.header--search-form{
+   width: 250px;
+   height: 45px;
+   
+   background-color: transparent;
+   border: 2px solid #e4e4e4;
+   border-radius: 6px;
+
+   display: flex;
+   align-items: center;  
+}
+
+.header--search-field{
+   width: 100%;
+   
+   background: transparent;
+   border: none;
+   outline: none;
+
+   font-size: 16px;
+   
+   color: #e4e4e4;
+
+   padding-left: 10px ;
+}
+
+.header--search-field::placeholder{
+   color: #e4e4e4;
+}
+
+.header--search-submit-btn{
+   width: 40px;
+   height: 100%;
+   
+   background-color: transparent;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+.header--search-submit-btn i{
+   font-size: 22px;
+   color: #e4e4e4;
+
+}
+
+.header--background{
+   width: 100%;
+   height: 100vh;
+   background: url(./img/bg.jpg) center no-repeat;
+   background-size: cover;
+   filter: blur(10px);
+}
+
+.conteiner{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   
+   transform: translate(-50%,-50%);
+   
+   width: 75%;
+   height: 550px;
+   background: url(./img/bg.jpg) center no-repeat;
+   background-size: cover;
+   border-radius: 10px;
+   margin-top: 20px;
+}
+
+.conteiner--content{
+   position: absolute;
+   top: 0;
+   left: 0;
+   
+   width: 58%;
+   height: 100%;
+   color: #e4e4e4;
+
+   padding: 80px;
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.conteiner--logreg-box{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: calc(100% - 58%);
+   height: 100%;
+}
+
+.conteiner--content-logo{
+   font-size: 30px;
+   
+   margin-top: 20px;
+}
+
+.conteiner--content-text h2{
+   font-size: 40px;
+   line-height: 1;
+   
+   margin-top: 20px;
+   
+}
+
+.conteiner--content-text h2 span{
+   font-size: 25px;
+  
+   margin-top: 20px;
+}
+
+.conteiner--content-text p{
+   font-size: 16px;
+   
+   margin: 20px 0;
+}
+
+.conteiner--content-socials{
+   margin-top: 20px;
+}
+
+.conteiner--content-socials a i{
+   font-size: 22px;
+   
+   color: #e4e4e4;
+   
+   margin-right: 10px;
+  
+   transition: .2s ease;
+}
+
+.conteiner--content-socials a i:hover{
+   transform: scale(1.2);
+}
+
+
+.conteiner--logreg-box {
+   overflow: hidden;
+}
+
+.logreg-box--login{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: transparent;
+   width: 100%;
+   height: 100%;
+   backdrop-filter: blur(20px);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   color: #e4e4e4;
+   
+   
+}
+
+.logreg-box--login h2{
+   font-size: 32px;
+   text-align: center;
+}
+
+.logreg-box--login-input {
+   position: relative;
+   width: 340px;
+   height: 50px;
+   border-bottom: 2px solid #e4e4e4;
+   margin: 30px 0;
+
+}
+
+.logreg-box--login-input input{
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   outline: none;
+
+   font-size: 16px;
+   color: #e4e4e4;
+   font-weight: 500;
+
+   padding-right:28px;
+}
+
+
+.logreg-box--login-input label{
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+
+   font-size: 16px;
+   font-weight: 500; 
+   pointer-events: none;
+
+   transition: .5s ease;
+}
+
+.logreg-box--login-input input:not(:empty)~label,
+.logreg-box--login-input input:valid~label,.logreg-box--login-input input:focus~label {
+   opacity: 0;
+   top: -5px;
+}
+
+.logreg-box--input-icon {
+   position: absolute;
+   top:13px;
+   right: 0;
+
+   font-size: 19px;
+}
+
+
+.logreg-box--login-remember {
+   font-size: 14px;
+   font-weight: 500;
+   margin: -15px 0 15px;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.logreg-box--login-remember label input{
+   accent-color: #e4e4e4;
+   margin-right: 3px;
+}
+
+.logreg-box--login-remember a{
+   color: #e4e4e4;
+   text-decoration: none;
+}
+
+.logreg-box--login-remember a:hover{
+   text-decoration: underline;
+}
+
+.logreg-box--login-btn {
+   width: 100%;
+   height: 45px;
+   background: #c4103d;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 500;
+   color: #e4e4e4;
+
+   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.logreg-box--login-register {
+   font-size: 14px;
+   font-weight: 500;
+   text-align: center;
+   margin-top: 25px;
+}
+
+.logreg-box--login-register p a{
+   text-decoration: none;
+   color: #e4e4e4;
+   font-weight: 600;
+}
+
+.logreg-box--login-register-link:hover{
+   text-decoration: underline;
+}
+
+
+.conteiner--logreg-box .logreg-box--login.register{
+   transform: translateX(500px);
+}
+
+
+.conteiner--logreg-box .logreg-box--login.login{
+   transform: translateX(0);
+   transition: transform .6s ease;
+   transition-delay: .7s;
+}
+.conteiner--logreg-box.active .logreg-box--login.login{
+   transform: translateX(500px);
+   transition-delay: 0s;
+}
+.conteiner--logreg-box .logreg-box--login.register{
+   transform: translateX(500);
+   transition: transform .5s ease;
+   transition-delay: 0s;
+}
+.conteiner--logreg-box.active .logreg-box--login.register{
+   transform: translateX(0);
+   transition-delay: 0.7s;
+}

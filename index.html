@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Теги "input" + форми</title>
+   <link rel="stylesheet" href="styles.css">
+   <!-- <link rel="stylesheet" href="reset.css"> -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet">
+
+</head>
+<body>  
+   <header class="header">
+      <nav class="header--navbar">
+            <a href="#" class="header-navbar-link" id="">About</a>
+            <a href="#" class="header-navbar-link" id="">News</a>
+            <a href="#" class="header-navbar-link" id="">Services</a>
+            <a href="#" class="header-navbar-link" id="">Contacts</a>
+      </nav>
+      
+         <form action="#" class="header--search-form">
+               <input type="text" class="header--search-field" placeholder="Search...">
+               
+               <button class="header--search-submit-btn" type="submit">
+                  <i class='bx bx-search'></i>
+               </button>
+         </form>
+   </header>
+
+
+   <div class="header--background">
+   </div>
+
+
+   <div class="conteiner">
+      <div class="conteiner--content">
+         <h2 class="conteiner--content-logo"><i class='bx bxl-firebase'></i>Codehal</h2>
+         <div class="conteiner--content-text">
+            <h2>Welcome!<br>
+               <span>
+                  To our new Website.
+               </span>
+            </h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, assumenda veritatis tempore quibusdam nesciunt nostrum.</p>
+
+            <div class="conteiner--content-socials">
+               <a href="" id=""><i class='bx bxl-linkedin'></i></a>
+               <a href="" id=""><i class='bx bxl-facebook'></i></a>
+               <a href="" id=""><i class='bx bxl-instagram'></i></a>
+               <a href="" id=""><i class='bx bxl-twitter'></i></a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="conteiner--logreg-box">
+         <div class="logreg-box--login login">
+            <form action="#">
+               <h2>Sign in</h2>
+
+               <div class="logreg-box--login-input">
+                  <span class="logreg-box--input-icon">
+                     <i class='bx bxs-envelope'></i>
+                  </span>
+                  <input type="name" required>
+                  <label for="namr">Name</label>
+               </div>
+               <div class="logreg-box--login-input">
+                  <span class="logreg-box--input-icon">
+                     <i class='bx bxs-lock-alt'></i>
+                  </span>
+                  <input type="password" required>
+                  <label for="password">Password</label>
+               </div>
+
+               <div class="logreg-box--login-remember">
+                  <label>
+                     <input type="checkbox">
+                     Remember me
+                  </label>
+                  <a href="#">Forgot password?</a>
+               </div>
+               <button type="submit" class="logreg-box--login-btn">Sign In</button>
+
+               <div class="logreg-box--login-register">
+                  <p>Don`t have an account?
+                  <a href="#" class="logreg-box--login-register-link register-link">Sign Up</a>
+                  </p>
+               </div>   
+
+            </form>
+         </div>
+
+         <div class="logreg-box--login register">
+            <form action="#">
+               <h2>Sign Up</h2>
+         
+               <div class="logreg-box--login-input">
+                  <span class="logreg-box--input-icon">
+                     <i class='bx bxs-envelope'></i>
+                  </span>
+                  <input type="name" required>
+                  <label for="name">Name</label>
+               </div>
+               <div class="logreg-box--login-input">
+                  <span class="logreg-box--input-icon">
+                     <i class='bx bxs-user'></i>
+                  </span>
+                  <input type="name" required>
+                  <label for="name">Email</label>
+               </div>
+               <div class="logreg-box--login-input">
+                  <span class="logreg-box--input-icon">
+                     <i class='bx bxs-lock-alt'></i>
+                  </span>
+                  <input type="password" required>
+                  <label for="password">Password</label>
+               </div>
+         
+               <div class="logreg-box--login-remember">
+                  <label>
+                     <input type="checkbox">
+                     I agree to the terms & conditions 
+                  </label>
+               </div>
+               <button type="submit" class="logreg-box--login-btn">Sign Up</button>
+         
+               <div class="logreg-box--login-register">
+                  <p>Already have an account?
+                     <a href="#" class="logreg-box--login-register-link login-link">Sign Ip</a>
+                  </p>
+               </div>
+         
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
